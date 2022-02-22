@@ -18,7 +18,7 @@ export class Video{
     duration: number;
 
     @Column()
-    category__id: string;
+    category_id: string;
 
     @ManyToOne(() => Category)
     @JoinColumn({ name: "category_id"})
