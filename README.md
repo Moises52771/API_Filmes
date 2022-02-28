@@ -21,11 +21,25 @@
                 
 ### Para startar o projeto
 
-*   De um `cd API_Filmes`
++   Crie um banco de dados PostgreSQL
 
-*   Em seguida execute `yarn` aguarde a instalação de node_modules
++   Vá até o arquivo ``.env`` e altere as seguintes variaveis de ambiente de acordo com a sua conexão com banco de dados:
+	+   TYPEORM_CONNECTION = 
+	+   TYPEORM_HOST = 
+	+   TYPEORM_USERNAME = 
+	+   TYPEORM_PASSWORD = 
+	+   TYPEORM_DATABASE = 
+	+   TYPEORM_PORT = 
+	
+*   Abra o terminal e vá até o diretorio ` API_Filmes`	
+
+*   Em seguida execute `yarn` aguarde a instalação de node_modules	
+   
+*   Execute  `yarn typeorm migration:run`  para construir a estrutura de tabelas em seu banco de dados
     
-*   Execute o comando  `yar dev`
+*   Após finalizado execute o comando  `yar dev`
+
+*   A API já podera ser ultilizada com a URL: http://localhost:3000
 
 ***
 
